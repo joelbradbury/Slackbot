@@ -16,6 +16,7 @@
 module.exports = (robot) ->
   robot.respond /distract @?([\w .\-]+)$/i, (msg) ->
     name = msg.match[1].trim()
+    name = msg.message.user.name.toLowerCase() if name == 'me'
 
     switch name
       when "iain" then query = 'tartan'
