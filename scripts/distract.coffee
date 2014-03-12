@@ -1,5 +1,5 @@
 # Description:
-#   Distract the specified Goon.
+#   Distract the specified Goonie.
 #
 # Dependencies:
 #   None
