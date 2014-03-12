@@ -2,12 +2,7 @@
   "redis-brain.coffee",
   "shipit.coffee",
   "applause.coffee",
-  "ascii.coffee",
   "beerme.coffee",
   "carlton.coffee",
-  "decide.coffee",
-  "encourage.coffee",
-  "rimshot.coffee",
-  "setenv.coffee",
   "steveholt.coffee"
 ]
