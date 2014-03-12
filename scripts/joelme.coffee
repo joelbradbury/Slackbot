@@ -22,7 +22,8 @@ joels = [
   "http://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png",
   "http://picturehouses.files.wordpress.com/2013/01/hobbit.jpg",
   "http://bestfilmsofourlives.files.wordpress.com/2012/12/movie-the-hobbit_002130021.jpeg",
-  "https://www.youtube.com/watch?v=_uaU2yFC5mw#t=60"
+  "https://www.youtube.com/watch?v=_uaU2yFC5mw#t=60",
+  "http://cdn.thewire.com/media/old_wire/img/upload/2012/12/12/The_Hobbit__1580983a/original.jpg"
 ]
 
 module.exports = (robot) ->
