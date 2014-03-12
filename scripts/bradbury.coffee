@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   joelalike - Display a thing that looks like Joel Bradbury
+#   joelme - Display a thing that looks like Joel Bradbury
 #
 # Author:
 #   monooso
@@ -26,5 +26,5 @@ joels = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /\b(joelalike)\b/i, (msg) ->
+  robot.hear /\b(joelme)\b/i, (msg) ->
     msg.send msg.random joels
