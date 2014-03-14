@@ -15,8 +15,8 @@
 #   iain
 
 module.exports = (robot) ->
-  robot.respond /showme @?([\w.\-]+)\s?(with)?(.*), (msg) ->
+	robot.respond /showme @?([\w .\-_]+) (in|with) (["'\w: \-_]+)[.!]*$/i, (msg)
     name = msg.match[1].trim()
-    search = msg.match[3].trim()
+    search = msg.match[2].trim()
 
     msg.send "http://hubot.iain.co.nz/?mark=#{name}&term=#{search}"
