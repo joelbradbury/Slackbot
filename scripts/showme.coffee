@@ -15,7 +15,7 @@
 #   iain
 
 module.exports = (robot) ->
-  robot.respond /showme\s+(\S+)\s?(in|with)?\s+(.*), (msg) ->
+  robot.respond /showme @?([\w.\-]+)\s?(with)?(.*), (msg) ->
     name = msg.match[1].trim()
     search = msg.match[3].trim()
 
