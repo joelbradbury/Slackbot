@@ -17,9 +17,9 @@
 module.exports = (robot) ->
 	robot.respond /showme @?([\w .\-_]+) (with|in) (["'\w: \-_]+)[.!]*$/i, (msg) ->
     name = msg.match[1].trim()
-    search = msg.match[2].trim()
+    searchString = msg.match[2].trim()
 
-    q = mark: name, term: search
+    q = mark: name, term: searchString
     msg.http('http://hubot.iain.co.nz/')
       .query(q)
       .get() (err, res, body) ->
