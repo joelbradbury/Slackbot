@@ -19,8 +19,4 @@ module.exports = (robot) ->
     name = msg.match[1].trim()
     search = msg.match[3].trim()
 
-    q = mark: name, term: search
-    msg.http('http://hubot.iain.co.nz/')
-      .query(q)
-      .get() (err, res, body) ->
-        msg.send body
+    msg.send "http://hubot.iain.co.nz/?mark=#{name}&term=#{search}"
