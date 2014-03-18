@@ -8,14 +8,14 @@
 #   None
 #
 # Commands:
-#   showme @joelbradbury with hobbits
-#   showme @stephen in cathedral cove
+#   slackbot showme <username with <subject>
+#   slackbot showme <username> in <place>
 #
 # Author:
 #   iain
 
 module.exports = (robot) ->
-	robot.respond /showme @?([\w .\-_]+) (with|in) (["'\w: \-_]+)[.!]*$/i, (msg) ->
+	robot.respond /showme @?([\w-]+)\s(with|in|at)\s(.+)$/i, (msg) ->
     name = msg.match[1].trim()
     searchString = msg.match[3].trim()
 
