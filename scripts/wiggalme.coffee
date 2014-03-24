@@ -1,5 +1,5 @@
 # Description:
-#   Wiggal wiggal wiggal wiggal wiggal, yeah!
+#   Wiggall wiggall wiggall wiggall wiggall, yeah!
 #
 # Dependencies:
 #   None
@@ -8,12 +8,12 @@
 #   None
 #
 # Commands:
-#   wiggalme - Wiggal wiggal wiggal wiggal wiggal, yeah!
+#   wiggallme - wiggall wiggall wiggall wiggall wiggall, yeah!
 #
 # Author:
 #   monooso
 
-wiggals = [
+wiggalls = [
   "http://media.giphy.com/media/3f6kmlg53vCX6/giphy.gif",
   "http://media.giphy.com/media/segu0wvqUjxgQ/giphy.gif",
   "http://24.media.tumblr.com/tumblr_m5x2lezHh61rydordo1_500.gif",
@@ -21,5 +21,5 @@ wiggals = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /\b(wiggalme)\b/i, (msg) ->
-    msg.send msg.random wiggals
+  robot.hear /\b(wiggallme)\b/i, (msg) ->
+    msg.send msg.random wiggalls
